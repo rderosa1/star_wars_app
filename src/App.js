@@ -74,6 +74,10 @@ class App extends React.Component{
           />
       </Switch>
 
+      <footer>
+        <div>May the Schwartz be With you!</div>
+      </footer>
+
       </div>
     )
   }

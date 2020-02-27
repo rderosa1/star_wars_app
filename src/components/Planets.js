@@ -35,31 +35,12 @@ export default class Planets extends React.Component {
         return(
 
             <div className = "allPlanets">
-                <h1>Planets</h1>
-
-                {/* {this.state.AllPlanets.map((planet, index) => {
-                    return(
-                        <div key = {index}>
-                            {planet.name}
-                        </div>
-                    )
-                })} */}
-
-
-                {/* {
-                    if (this.state.AllPlanets.length === 0){
-                        console.log('Loading...')
-                    } else {
-                        console.log('hello there')
-                    }
-
-                } */}
-
+                <h1>Star Wars Planets</h1>
 
                 {this.state.AllPlanets.length >= 1 ?
                 (this.state.AllPlanets.map((planet, index) => {
                     return(
-                        <div key = {index}>
+                        <div className = "planet-name" key = {index}>
                             {planet.name}
                         </div>
                     )

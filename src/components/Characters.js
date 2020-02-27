@@ -25,9 +25,6 @@ export default class Characters extends React.Component {
 
     } 
 
-
-      
-
     render(){
         return(
             <div className = "characters">
@@ -48,29 +45,9 @@ export default class Characters extends React.Component {
                       (< img src = 'https://www.downgraf.com/wp-content/uploads/2014/09/03-yodaloader.gif' alt = "loading spinner"/>)
 
                     }
-
-                  {/* {this.state.characters.map((character, index) => {
-                    return(
-                      <div key = {index}> 
-                        {character} 
-                      </div>
-                    )
-                  })} */}
                 
                 </h2>
             </div>
         )
     }
 }
-
-// {this.state.AllCharactersList.length >= 1 ?
-//     (this.state.AllCharactersList.map((character, index) => {
-//         return(
-//             <div key = {index}>
-//                 {character.name}
-//             </div>
-//         )
-//     }))
-//     : 
-//     (< img src = 'https://cdn.dribbble.com/users/361263/screenshots/3051905/imperial_emblem.gif' alt = "loading spinner"/>)
-//     }
