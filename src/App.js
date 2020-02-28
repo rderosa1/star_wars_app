@@ -7,6 +7,7 @@ import AllCharacters from './components/AllCharacters'
 import Planets from './components/Planets'
 import Characters from './components/Characters'
 import FeaturedPlanets from "./components/FeaturedPlanets"
+import NoMatch from './components/NoMatch'
 import { Route, Switch } from 'react-router-dom'
 
 class App extends React.Component{
@@ -72,7 +73,14 @@ class App extends React.Component{
           /> 
             } 
           />
+
+          <Route path={"*"} component={NoMatch} />
+
       </Switch>
+
+      <footer>
+        <div>May the Schwartz be With you!</div>
+      </footer>
 
       </div>
     )

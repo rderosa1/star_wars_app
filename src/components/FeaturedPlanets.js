@@ -15,10 +15,10 @@ export default class FeaturedPlanets extends Component {
 
         selectedMovie.planets.map(async(url) => {
           const response = await Axios.get(url)
-          console.log(response.data.name)
+          console.log(response.data.climate)
 
           this.setState(prevState => ({
-            featuredPlanets: [...prevState.featuredPlanets, response.data.name]
+            featuredPlanets: [...prevState.featuredPlanets, response.data]
           }))
         })
 
@@ -32,21 +32,15 @@ export default class FeaturedPlanets extends Component {
               
               <div>
                 <h2>
-                  
-                  {/* {this.state.featuredPlanets.map((planet, index) => {
-                    return(
-                      <div key = {index}> 
-                        {planet} 
-                      </div>
-                    )
-                  })} */}
-
 
                   {this.state.featuredPlanets.length >= 1 ?
                   (this.state.featuredPlanets.map((planet, index) => {
                     return(
                       <div key = {index}> 
-                        {planet} 
+                        <p>Name: {planet.name}</p>
+                        <p>Climate: {planet.climate}</p> 
+                        <p>Population: {planet.population}</p>
+                        <br/>
                       </div>
                     )
                   }))
@@ -63,15 +57,3 @@ export default class FeaturedPlanets extends Component {
     }
   
   }
-
-  // {this.state.AllCharactersList.length >= 1 ?
-//     (this.state.AllCharactersList.map((character, index) => {
-//         return(
-//             <div key = {index}>
-//                 {character.name}
-//             </div>
-//         )
-//     }))
-//     : 
-//     (< img src = 'https://cdn.dribbble.com/users/361263/screenshots/3051905/imperial_emblem.gif' alt = "loading spinner"/>)
-//     }

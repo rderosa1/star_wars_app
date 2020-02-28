@@ -39,7 +39,7 @@ export default class AllCharacters extends React.Component {
               {this.state.AllCharactersList.length >= 1 ?
                 (this.state.AllCharactersList.map((character, index) => {
                     return(
-                        <div key = {index}>
+                        <div className = "character-name" key = {index}>
                             {character.name}
                         </div>
                     )
@@ -48,15 +48,6 @@ export default class AllCharacters extends React.Component {
                 (< img src = 'https://cdn.dribbble.com/users/361263/screenshots/3051905/imperial_emblem.gif' alt = "loading spinner"/>)
                 }
 
-
-
-                {/* {this.state.AllCharactersList.map((character, index) => {
-                    return(
-                        <div key = {index}>
-                            { ` ${character.name} ` }
-                        </div>
-                    )
-                })} */}
             </div>
         )
     }

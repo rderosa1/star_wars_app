@@ -1,3 +1,13 @@
+working Title: star_wars_app
+description: this app will be for those who have interest in the star wars films. The free online star wars api is called so that information is called about each of the star wars films available on the star wars API. Directors, producers, and realease dates of all the star wars films are readily avaialable, with options to request additional information. This information includes all characters, and all planets available in the swapi, as well as as those specific to certain movies. 
+Hierarchy: components include "allcharacters" and "planets", which both handle the full lists of said items, and so are classes, needing to keep state. "Featuredplanets" and "characters" components are also classes as they too call the api for specific information and render it from state. For the same reason, the App.js is also a class. "MovieContainer", "movie", "header", and "footer" and the like, are functional classes, as they only render, without needing to hold information in state.
+API: https://swapi.co/api/films
+MVP: This app is an interactive, functional app, using react and react router only, that makes multiple API using AXIOS calls to various api endpoints. There are at least 6 components, utilizing both functional and class types. It is styled with CSS, and responsive to 3 screen sizes using media queries. It was deployed on github and on surge.
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
