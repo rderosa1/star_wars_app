@@ -176,6 +176,10 @@ text-shadow: 0 2px black, 0 -2px black, 2px 0 black, -2px 0 black;
   padding: 0 4px;
 }
 
+.featuredPlanets p:last-child {
+  margin-bottom: 0;
+}
+
 .characters {
   text-align: center;
   background: url('images/featured-characeters.png');
@@ -247,5 +251,3 @@ footer {
     text-align: center;
   }
 }
-
-/* this is a comment */
